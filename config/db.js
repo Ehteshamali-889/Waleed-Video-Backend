@@ -17,7 +17,7 @@ require("dotenv").config();
 const { MongoClient, ServerApiVersion } = require("mongodb");
 const mongoose = require("mongoose");
 mongoose
-  .connect("mongodb://localhost/VideoApp")
+  .connect("mongodb+srv://admin:admin@cluster0.c87jcsv.mongodb.net/?retryWrites=true&w=majority")
   .then(() => {
     console.log("DB connected");
   })
